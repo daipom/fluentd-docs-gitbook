@@ -112,7 +112,7 @@ Invokes a fluentd only with input plugins.
 
 See [Source Only Mode](source-only-mode.md) for details.
 
-See also [\<source_only_buffer\> section](#less-than-source_only_buffer-greater-than-section).
+See also [source_only_buffer section](#less-than-source_only_buffer-greater-than-section).
 
 ### `rpc_endpoint`
 
@@ -285,7 +285,7 @@ See [Output Plugins - overflow_action](../output#overflow_action) for details.
 | :---   | :---                                   | :---    |
 | string | nil (use unique path for the instance) | 1.18.0  |
 
-Set this option when recovering buffers ([Source Only Mode - Recovering](source-only-mode.md#Recovering)).
+Set this option when recovering buffers ([Source Only Mode - Recovery](source-only-mode.md#Recovery)).
 
 See [Buffer Plugins - file - path](../buffer/file.md#path) for details.
 

@@ -41,20 +41,20 @@ It works with the default settings of `out_buffer` except for the following poin
 If need, you can configure some options for the buffer in System Configuration.
 Please see the following for details.
 
-* [System Configuration - \<source_only_buffer\> section](system-config.md#less-than-source_only_buffer-greater-than-section).
+* [System Configuration - source_only_buffer section](system-config.md#less-than-source_only_buffer-greater-than-section).
 
-### Recovering
+### Recovery
 
 If Fluentd stops with the temporary buffer left, you need to recover the buffer to launch Fluentd with source-only mode again.
 
 Note that a different path will be used each time unless you configure the temporary buffer path explicitly.
 In this case, you can recover the buffer as follows.
 
-1. Configure the left buffer path explicitly.
+1. Configure the remaining buffer path explicitly.
 1. Start Fluentd with source-only mode again.
 1. Send `SIGWINCH` to the supervisor to load the buffer.
 
-If this recovering is necessary, i.e., Fluentd stops with the temporary buffer left, the following warning log will be output.
+If this recovery is necessary, i.e., Fluentd stops with the temporary buffer left, the following warning log will be output.
 You can confirm the path to configure by this log.
 
 ```
