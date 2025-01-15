@@ -32,7 +32,7 @@ It is included in Fluentd's core (since v1.18.0).
 </match>
 ```
 
-In the above example, events emitted by `in_udp` are once stored in the buffer of this plugin, then re-routed and output by `out_stdout`.
+In the above example, events ingested by `in_udp` are once stored in the buffer of this plugin, then re-routed and output by `out_stdout`.
 
 ## Supported Modes
 

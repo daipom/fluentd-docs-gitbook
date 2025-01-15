@@ -3,7 +3,7 @@
 Since v1.18.0, Fluentd can launch with source-only mode.
 (Not supported on Windows)
 
-* In this mode, only input plugins runs.
+* In this mode, only input plugins run.
 * During this mode, the events are stored in a temporary file buffer.
 * Sending `SIGWINCH` to the supervisor cancels this mode.
   * Then, all plugins start to run, and the temporary file buffer starts to load.
@@ -17,7 +17,7 @@ You can launch Fluentd with source-only mode in the following ways.
 
 ## Temporary file buffer
 
-During source-only mode, the events are stored in a temporary file buffer.
+During source-only mode, the ingested events are stored in a temporary file buffer.
 After `SIGWINCH` is sent to the supervisor and this mode is canceled, this buffer begins to load.
 
 By default, the file buffer path is as follows.
@@ -38,7 +38,7 @@ It works with the default settings of `out_buffer` except for the following poin
 * `path` is automatically determined by default.
 * `overflow_action` is `drop_oldest_chunk` by default.
 
-If need, you can configure some options for the buffer in System Configuration.
+If needed, you can configure some options for the buffer in System Configuration.
 Please see the following for details.
 
 * [System Configuration - source_only_buffer section](system-config.md#less-than-source_only_buffer-greater-than-section).
